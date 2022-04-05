@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito ou Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag B(Não semantica, ou seja só possui forma não significado)</p>
+    <p>Nesta frase tenho um <strong>termo em Destaque</strong> usando a tag STRONG (semantica)</p>
+    <h2>Itálico ou Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em itálico</i>, usando a tag I (Não semantica)</p>
+    <p>Neste frase temos um <em>termo em ênfase</em>, usando a tag EM (semantica)</p>
+    <h2>Marcação de texto</h2>
+    <p>para fazermos algumas marcações para dar mais ênfase a linha que inserimos em nosso código podemos usar a tag MARK, <mark>onde o texto ficaria desta forma.</mark></p>
+    <h2>&ltbig&gt morreu, mas o &ltsmall&gt ainda sobrevive</h2>
+    <p>exemplo da big, que pode até funcionar na hora de escrever o código, porém foi descontinuada</p>
+    <img src="Tags descontinuadas/tag big.PNG" alt="Imagem para exemplificar a tag big">
+    <p>Já a SMALL continua valendo <small>conforme aplicado aqui</small></p>
+    <h2>Texto Deletado</h2>
+    <p>Atualmente a Html utiliza a tag DEL, para exemplificar que aquele conteúdo pode ser lido porém desconsiderado, <del>muito uitlizado em resoluções, leis e tals</del></p>
+    <h2>Texto Inserido</h2>
+    <p>Texto inserido é o ospoto ao deletado que vimos acima. Nessa caso, se colocarmos um texto dentro da tag &ltins&gt, estamos dizendo que o texto está ali, <ins>deve ser lido e você deve prestar atenção nele.</ins></p>
+    <h2>Texto Sobrescrito e subscrito</h2>
+    <p>Subscrito: Muito utilizado por exemplos em formúlas matematicas e químicas, para inserirmos esse tipo de texto colocamos a tag sub num de caso de formúla química, usamos a tag &ltsub&gt por exemplo: h<sub>2</sub>o</p>
+    <p>Sobrescrito nesse caso podemos utilizar como exemplo formúlas matematicas usamos a tag &ltsup&gt, como raíz quadrada: x<sup>2</sup> </p>
+    <h2>Trechos de código</h2>
+    <h3>CODE</h3>
+    <p>Programadores compartilham muito o código-fonte em diversas linguagens, por isto a principal vantagem da tag &ltcode&gt, pois ela pode delimitar o seu código e causando um efeito até que visual (Mono-espaçado [Monospace]). O seu principal destaque é no valor semantico que ela representa, indicando ao navegador que se trata de um código de computador. Exemplo abaixo linguagem python:</p>
+    <code>num - int(input('Digite um número'((if rum % 2 ==0:
+            print(f'0 número {num} é par') else:
+            print(f'0 número {num} é ímpar') pint('FIM DO PROGRAMA')</code>
+    <h3>PRE</h3>
+    <p>O code ele não vai deixar o código inserido de uma forma extraida, apenas vai deixa-lá mono espaçada conforme acima. É ai que entra a tag &ltpre&gt que mantém o texto pré-formatado, ou seja da mesma forma na qual ele foi digitado (incluindo quebras de linhas, espaços e tabulações.)</p>
+    <pre><code>num - int(input('Digite um número'((if rum % 2 ==0:
+        print(f'0 número {num} é par') else:
+        print(f'0 número {num} é ímpar') pint('FIM DO PROGRAMA')</code></pre>
+        <p>Nesse caso juntamos as duas tags para gerar esse resultado, algo normal relaxa!</p>
+        <img src="imagens de exemplo/tags pre e code juntaas.PNG" alt="Imagem de exemplo das duas tags">
+        
+    <h2>Citações</h2>
+    <p>Normalmente as citações aparecem entre aspas e/ou com as margens deslocadas em relação ao texto, para criar em HTML usamos a tag &ltq&gt (do inglês quote, que significa citar), mas não terá o deslocamente somente aspas.</p>
+
+    <q>
+        A suspeita sempre persegue a consciência culpada; o ladrão vê em cada sombra um policial.
+        William Shakespeare
+    </q>
+    
+    <p>Também é possível criar sitações mais longas (em bloco) e que tenham uma parágrafo só para si. Nesse caso colocaremos tudo em &ltblockquote&gt o texto também ganhará um recuo automático e podemos tambem colocar link para o texto original, usando o parâmetro <mark>cite</mark> conforme abaixo:</p>
+    <img src="imagens de exemplo/blockquote.PNG" alt="Imagem de exemplo de uma blockquote">
+
+    <h2>Abreviações</h2>
+    <p>Novidade da html5, sempre que quisermos escrever uma sigla e deixar claro ao usuário ( e aos mencanismos de buscas) o signficado dela, use a tag &ltabbr&gt.</p>
+
+    <p>Eu estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> para criar sites.</p>
+
+    <h2>Texto invertido</h2>
+
+    <p>A tag &ltbdo&gt serve para colocarmos o texto invertido, BDO significa bi-directional override, ao usar essa tag tbm definimos o parâmetro dir para indincar uma das duas direções:</p>
+    
+    <h3>rtl: direita para esquerda (right-to-left)</h3>
+    <bdo dir="rtl">Achei essa tag meio inútil, mas vamo q vamo</bdo>
+
+    <h3>ltr: esquerda para a direita (left-to-right)</h3>
+    <bdo dir="ltr">Agora da esquerda para a direita</bdo>
+
+    
+</body>
+</html>
