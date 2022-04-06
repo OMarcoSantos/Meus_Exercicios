@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formatação de Texto</title>
+       <title>Formatação de Texto</title>
+       <style>
+           mark {
+               background-color: coral;
+           }
+       </style>
 </head>
 <body>
     <h1>Principais Formatações</h1>
@@ -14,8 +19,13 @@
     <h2>Itálico ou Ênfase</h2>
     <p>Nesta frase temos um <i>termo em itálico</i>, usando a tag I (Não semantica)</p>
     <p>Neste frase temos um <em>termo em ênfase</em>, usando a tag EM (semantica)</p>
+
     <h2>Marcação de texto</h2>
-    <p>para fazermos algumas marcações para dar mais ênfase a linha que inserimos em nosso código podemos usar a tag MARK, <mark>onde o texto ficaria desta forma.</mark></p>
+    <p>para fazermos algumas marcações para dar mais ênfase a linha que <p>
+        inserimos em nosso código podemos usar a tag MARK, <mark>onde o texto ficaria desta forma.</mark></p>
+        Também nesta marcação eu posso adicionar a tag &ltstyle&gt (CSS), para destacar algo pontual com uma outro cor por exemplo, <mark style="background-color: blueviolet;">ficando assim como é</mark>
+    </p>
+
     <h2>&ltbig&gt morreu, mas o &ltsmall&gt ainda sobrevive</h2>
     <p>exemplo da big, que pode até funcionar na hora de escrever o código, porém foi descontinuada</p>
     <img src="Tags descontinuadas/tag big.PNG" alt="Imagem para exemplificar a tag big">
