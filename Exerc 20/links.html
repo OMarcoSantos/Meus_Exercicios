@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+        Seletores Personalizados:
+        
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: greenyellow;
+        }
+
+        a::after {
+            content: ' [Link]';
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 0.60em;
+            color: darkgrey
+        }
+
+        .especial {
+            background-color: #914bd3aa;
+        }
+
+        .especial::before {
+            content: '»';
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/OMarcoSantos" target="_blank" rel="external">GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCpps_qzLX2dA2xabhHoXOrg" target="_blank" rel="external" class="especial">Canal Youtube</a></li>
+        <li><a href="https://fonts.google.com/?category=Handwriting" target="_blank" rel="external">Site</a></li>
+    </ul>
+</body>
+</html>
