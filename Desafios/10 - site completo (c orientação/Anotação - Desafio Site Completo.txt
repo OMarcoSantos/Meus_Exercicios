@@ -1,0 +1,85 @@
+1º Passo utilizar o mockflow.com para ajudar a desenhar o layout do site;
+
+
+
+o desenho do site macflow vai servir como espelho para criação do site.
+
+
+<NAV>
+Normalmente colocava dentro do header, mas posso também colocar ele fora, como no meu modelo de site, onde coloquei o  Nav em novo box model.
+
+
+EXTRA: No conteúdo extra que estamos inserindo no site, como não faz parte do conteúdo principal, iremos colocar na  tag <ASIDE> para melhor idenrifica-lá.
+
+FOOTER	
+Vem depois do main, ao final ou no começo depende onde terá os rodapés
+
+Pasta Estilos:
+
+<link rel="stylesheet" href="estilos/style.css">
+
+aqui colocamos nosso arquivo css em uma pasta chamada estilos que vem acompanhado da barra
+"estilos/style.css"
+
+
+main h1 {
+	  Neste situação o comando pega tdos os h1 que estão dentro de main, independente de estarem ou não em outros grupos e juntão todos em uma unica configuração
+
+Configurações globais, é configurada a partir do asterisco, e as configurações que forem definidas nelas englobam tdos os parâmetros configurados (h1...h6, box models, p, header etc)
+* {
+	margin: 0px;
+	padding: 0px
+		}
+Neste exemplo, foi configurado para ele dixar a margem e o padding com 0px;
+
+
+Na tag style ou no arquivo CSS ao configurar a largura da forma, ele tomará 100% da minha view port (pagina em branco) melhorando assim a responsividade da imagem no site e ficando ainda melhor ao incorporar a tag picture no meu doc html; 
+img {
+            width: 100%;
+        }
+
+
+Window Rizeser: extensão do chrome que ajuda a visualizar diferente tamanhos de telas (cel, tablet, etc)
+
+
+Centralizando imagem
+Uma imagem não é por padrão no html um bloco, sendo assim algumas configurações de box level, não iram surtir efeito nela, para "corrigir" esta questão colocamos na CSS um parâmetro de display: block, pois assim incluiremos a imagem dentro de uma caixa e por ela conseguiremos configurar mais elementos;
+
+
+transition-duration: "inserir o tempo de uma transião para outra, ex: 0.5s (.5s) ou 1s"; 
+
+
+text-indent: 2em;
+Aqui serve para colocarmos um recuo no primeiro parágrafo do nesse texto, funciona como tab no word quando quero colocar uma espaço.
+
+line-height: 1em;
+Espaçamento entre linhas;
+
+
+
+margin negativa, ao definir uma margem negativo o bloco vai se sobresair e ela está vazando da minha borda;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

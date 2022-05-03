@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+    background-color: #30e68d7d;
+    text-align: justify;
+}
+
+header {
+    color: white;
+    text-align: center;    
+}
+
+nav > a {
+    text-decoration: none;
+}
